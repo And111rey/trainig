@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+
+	<input value = "Нажми меня" onclick = "alert('ты клацнул по кнопке')" type = "button">
+	<hr/><hr/><hr/><hr/><hr/>
+	
+	<script>
+		var quantity = prompt("Сколько кроликов пересчитать");
+	
+		function countRabbits(quantity) {
+			for(var i=1; i<=quantity; i++) {
+				  document.write("Кролик номер "  + i + "<br/>");
+			}
+		}
+	</script>
+	
+	<input type = "button" onclick = "countRabbits(quantity)" value = "нажм "/>
+
+</body>
+
+</html>

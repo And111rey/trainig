@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+
+	
+	
+	<div id="ccc"><hr color="red"/><hr color="red"/><hr color="red"/><hr color="red"/><hr color="red"/></div>
+	<h3 id="try">Пробная строка</h3>
+	<h3 id = "rrr">Все что на странице исчезнет</h3>
+	<input id="butt" type="button" value="сделать два события"/>
+	
+	<script>
+	
+		function colorB () { //		**********************************ДАННАЯ ФУНКЦИЯ МЕНЯЕТ ЦВЕТ ФОНА ВЫБРАНОГО ЭЛЕМЕНТА ПО id
+			document.getElementById("try").style.background="red";
+		}
+		
+		function disappear () { //***************ДАННАЯ ФУНКЦИЯ УДАЛИТ СТРОКУ СОГЛАСНО ЗАДАНОМУ ВРЕМЕНИ. И ТА ТА АКТИВИРУЕТСЯ ОДНОВРЕМЕННО
+			return setInterval(function() {document.getElementById("try").style.display = "none"}, 2000);
+		}
+		
+		function b () {
+			return setInterval(function() {document.getElementById("butt").style.display = "none"}, 3000);
+		}
+		
+		function bb () {
+			return setTimeout(function() {document.getElementById("rrr").style.display = "none"}, 4000);
+			
+			
+			
+			var div = document.createElement(div);
+			div.id="ddd";
+			document.body.appendChild(div);
+			
+			
+			function ooo () {
+				return setTimeout(function() { return div.innerHTML="Все на странице пропадет"}, 1000)
+			}
+			
+			
+			
+		}
+			butt.addEventListener("click", colorB); // МЕХАНИЗМ КНОПКИ ДЛЯ 
+			butt.addEventListener("click", disappear); // МЕХАНИЗМ КНОПКИ ДЯЛ  РАБОТЫ С НЕСКОЛЬКОМИ  ФУНКИЯМИ ОДНОВРЕМЕННО
+			butt.addEventListener("click", b);
+			butt.addEventListener("click", bb);
+		
+		
+		
+	</script>
+
+</body>
+
+
+</html>

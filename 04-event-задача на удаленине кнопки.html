@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+	<input type="button" id="hider" value="Нажми чтоб спрятать текст"/> 	<input type="button" id="hider1" value="Нажми чтоб текст ВЕРНУЛСЯ"/>
+
+	
+	
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<hr color="red"/>
+	<hr color="red"/>
+	<hr color="red"/>
+	<hr color="red"/>
+	<div id="text">Вот текст который надо спрятать</div>
+	<hr color="red"/><hr color="red"/><hr color="red"/><hr color="red"/>
+	
+	<script>
+		
+		document.getElementById("hider").onclick = function () { //ВЗЯЛИ ЭЛЕМЕНТ ЧЕРЕЗ ID="", ОБЬЕКТНЫМ МЕТОДОМ ДОБАВИЛИ К НЕМУ КОМАНДУ СОБЫТИЯ "ONCLIK", И НАЗНАЧИТИ ФУНКЦИЮ
+			document.getElementById("text").style.display = "none";	//	 ТЕЛО ФУНКЦИИ ИМЕЕТ АТРИБУТ "STYLE.DISPLAY= 'NONE'"//ИМЕННО ""NONE"ОТВЕЧАЕТ ЗА ИСЧЗНОВЕНИЕ ...
+		}
+		
+		document.getElementById("hider1").onclick = function () {	// ЭТА ФУНКЦИЯ ИДЕНТИЧНАЯТОЙ ТОЙ ЧТО ВЫШЕ, НО В НЕЙ НЕ ПУСТЫЕ ПОЛЯ В DISPLAY=""
+			document.getElementById("text").style.display = "";
+		}
+	
+	</script>
+</body>
+
+</html>
